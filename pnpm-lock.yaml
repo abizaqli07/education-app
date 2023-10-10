@@ -320,7 +320,10 @@ importers:
         version: 1.11.0
       drizzle-orm:
         specifier: ^0.28.6
-        version: 0.28.6(@planetscale/database@1.11.0)
+        version: 0.28.6(@planetscale/database@1.11.0)(postgres@3.3.5)
+      postgres:
+        specifier: ^3.3.5
+        version: 3.3.5
     devDependencies:
       '@acme/eslint-config':
         specifier: ^0.2.0
@@ -5552,7 +5555,7 @@ packages:
       - supports-color
     dev: true
 
-  /drizzle-orm@0.28.6(@planetscale/database@1.11.0):
+  /drizzle-orm@0.28.6(@planetscale/database@1.11.0)(postgres@3.3.5):
     resolution: {integrity: sha512-yBe+F9htrlYER7uXgDJUQsTHFoIrI5yMm5A0bg0GiZ/kY5jNXTWoEy4KQtg35cE27sw1VbgzoMWHAgCckUUUww==}
     peerDependencies:
       '@aws-sdk/client-rds-data': '>=3'
@@ -5615,6 +5618,7 @@ packages:
         optional: true
     dependencies:
       '@planetscale/database': 1.11.0
+      postgres: 3.3.5
     dev: false
 
   /duplexer3@0.1.5:
@@ -9448,6 +9452,10 @@ packages:
       nanoid: 3.3.6
       picocolors: 1.0.0
       source-map-js: 1.0.2
+    dev: false
+
+  /postgres@3.3.5:
+    resolution: {integrity: sha512-+JD93VELV9gHkqpV5gdL5/70HdGtEw4/XE1S4BC8f1mcPmdib3K5XsKVbnR1XcAyC41zOnifJ+9YRKxdIsXiUw==}
     dev: false
 
   /preact-render-to-string@5.2.3(preact@10.11.3):
